@@ -1,0 +1,6 @@
+framework module Pods_ReqresApp_ReqresAppUITests {
+  umbrella header "Pods-ReqresApp-ReqresAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
