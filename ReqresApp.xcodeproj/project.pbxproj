@@ -246,7 +246,6 @@
 			children = (
 				65993E762AF9DFA40061D3DF /* ReqresApp */,
 				65993E8D2AF9DFA50061D3DF /* ReqresAppTests */,
-				65993E972AF9DFA50061D3DF /* ReqresAppUITests */,
 				65993E752AF9DFA40061D3DF /* Products */,
 				C70F78284FE8D66CFFAC0AF8 /* Pods */,
 				EA2AB18C5C01BCE28CC76E6A /* Frameworks */,
@@ -283,13 +282,6 @@
 				650BDD1C2AFA331000F744DF /* ReqresAppTests-Bridging-Header.h */,
 			);
 			path = ReqresAppTests;
-			sourceTree = "<group>";
-		};
-		65993E972AF9DFA50061D3DF /* ReqresAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ReqresAppUITests;
 			sourceTree = "<group>";
 		};
 		C70F78284FE8D66CFFAC0AF8 /* Pods */ = {
