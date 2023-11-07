@@ -22,15 +22,6 @@ protocol BaseInteractorProtocol: AnyObject {
 
 protocol BaseWireframeProtocol: AnyObject {
     
-    /// Show or hide activity indicator (custom / default)
-    /// - Parameters:
-    ///   - isHidden: Set loading visibility
-    ///   - indicatorType: Default or shimmer
-    func setLoadingIndicator(isHidden: Bool)
-    
-    /// Show dialog no internet connection
-    func showNoInternetAlert()
-    
     /// Show alert dialog with
     /// - Parameters:
     ///   - message: Alert message
@@ -44,7 +35,7 @@ protocol BaseInteractorDelegate: AnyObject {
     /// - Parameters:
     ///   - error: Error description
     ///   - requestType: Failed source
-    func serviceRequestDidFail(_ error: NSError)
+    func serviceRequestDidFail(_ error: CustomError)
 
 }
 

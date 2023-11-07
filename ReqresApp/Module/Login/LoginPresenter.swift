@@ -25,10 +25,12 @@ class LoginPresenter: LoginPresenterProtocol {
 
 extension LoginPresenter: LoginInteractorDelegate {
     func loginSuccessfull(token: String) {
+        UserDefaults.standard.set(token, forKey: "TOKEN")
         view?.loginActionHandler(isSuccess: true)
+        wireframe.pushToHomeViewController()
     }
     
-    func serviceRequestDidFail(_ error: NSError) {
+    func serviceRequestDidFail(_ error: CustomError) {
         view?.loginActionHandler(isSuccess: false)
         DispatchQueue.main.async { [weak self] in
             self?.wireframe.showErrorAlert(error.localizedDescription)

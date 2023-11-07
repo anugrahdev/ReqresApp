@@ -22,6 +22,7 @@ class LoginViewController: UIViewController {
         loginButton.imageView?.centerYAnchor.constraint(equalTo: loginButton.centerYAnchor, constant: 0.0).isActive = true
         loginButton.translatesAutoresizingMaskIntoConstraints = false
         loginButton.imageView?.translatesAutoresizingMaskIntoConstraints = false
+        passwordTextField.isSecureTextEntry = true
         passwordTextField.enablePasswordToggle()
     }
     
@@ -34,6 +35,9 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: LoginViewProtocol {
     func loginActionHandler(isSuccess: Bool) {
+        if isSuccess {
+            showSnackbar("Login Success")
+        }
         loginButton.isLoading = false
     }
 }

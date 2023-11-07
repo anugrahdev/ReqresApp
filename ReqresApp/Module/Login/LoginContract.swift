@@ -16,7 +16,7 @@ protocol LoginPresenterProtocol: BasePresenterProtocol {
 }
 
 protocol LoginWireframeProtocol: BaseWireframeProtocol {
-    
+    func pushToHomeViewController()
 }
 
 protocol LoginInteractorProtocol: BaseInteractorProtocol {

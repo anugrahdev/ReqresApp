@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 protocol RestApiServicesProtocol {
-    func postLogin<T: Codable>(params: [String:String], success: @escaping (T) -> Void, failure: @escaping (NSError) -> Void)
+    func postLogin<T: Codable>(params: [String:String], success: @escaping (T) -> Void, failure: @escaping (CustomError) -> Void)
 }
 
 class RestApiServices: RestApiServicesProtocol {
@@ -18,7 +18,7 @@ class RestApiServices: RestApiServicesProtocol {
         RestApiServices()
     }()
     
-    func postLogin<T: Codable>(params: [String:String], success: @escaping (T) -> Void, failure: @escaping (NSError) -> Void) {
+    func postLogin<T: Codable>(params: [String:String], success: @escaping (T) -> Void, failure: @escaping (CustomError) -> Void) {
         let url = BASE_URL + NetworkServiceConstant.loginURL.rawValue
         AF.request(url, method: .post, parameters: params, encoder: JSONParameterEncoder.default)
             .validate(statusCode: 200..<400)
@@ -28,7 +28,9 @@ class RestApiServices: RestApiServicesProtocol {
             case .success(let data):
                 success(data)
             case .failure(let error):
-                failure(error as NSError)
+                if let errorData = response.data, let customError = try? JSONDecoder().decode(ErrorResponse.self, from: errorData) {
+                    failure(CustomError(title: "error", description: customError.error ?? error.localizedDescription, code: error.responseCode ?? 0))
+                }
             }
         }
         

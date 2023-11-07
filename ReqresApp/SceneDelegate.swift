@@ -19,7 +19,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         let navigationController = UINavigationController()
-        navigationController.pushViewController(router.setupLoginViewController(), animated: true)
+        if (UserDefaults.standard.string(forKey: "TOKEN") != nil) {
+            navigationController.pushViewController(router.setupHomeViewController(), animated: true)
+        } else {
+            navigationController.pushViewController(router.setupLoginViewController(), animated: true)
+        }
         window!.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }

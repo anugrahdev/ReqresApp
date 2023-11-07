@@ -18,6 +18,7 @@ class LoginWireframe: LoginWireframeProtocol {
     
     func setupLoginViewController() -> LoginViewController {
         let interactor = LoginInteractor()
+        interactor.request = RestApiServices.shared
         let presenter = LoginPresenter(interactor: interactor, wireframe: self)
         let view = LoginViewController()
         interactor.delegate = presenter
@@ -28,15 +29,14 @@ class LoginWireframe: LoginWireframeProtocol {
         return view
     }
     
-    func setLoadingIndicator(isHidden: Bool) {
-        
-    }
-    
-    func showNoInternetAlert() {
-    }
-    
     func showErrorAlert(_ message: String) {
         showSnackbar(message)
+    }
+    
+    func pushToHomeViewController() {
+        let router = resolver.resolve(Router.self)
+        let viewController = router.setupHomeViewController()
+        controller?.navigationController?.setViewControllers([viewController], animated: true)
     }
 }
 
