@@ -4,10 +4,11 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Gilroy-Regular.ttf</string>
-		<string>Gilroy-Light.ttf</string>
-		<string>Gilroy-Bold.ttf</string>
-		<string>Gilroy-Light.ttf</string>
+		<string>Gilroy-ExtraBold.ttf</string>
+		<string>Gilroy Regular.ttf</string>
+		<string>Gilroy Light.ttf</string>
+		<string>Gilroy Bold.ttf</string>
+		<string>Gilroy Light.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

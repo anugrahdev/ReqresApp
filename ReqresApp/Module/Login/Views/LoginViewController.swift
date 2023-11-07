@@ -9,9 +9,9 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var welcomeeLabel: UILabel!
     @IBOutlet weak var loginButton: LoaderButton!
     
     var presenter: LoginPresenterProtocol?
@@ -24,6 +24,12 @@ class LoginViewController: UIViewController {
         loginButton.imageView?.translatesAutoresizingMaskIntoConstraints = false
         passwordTextField.isSecureTextEntry = true
         passwordTextField.enablePasswordToggle()
+        let attributedText = NSMutableAttributedString(string: welcomeeLabel.text ?? "")
+        let range = (welcomeeLabel.text as NSString?)?.range(of: "Selamat Datang")
+        if let range = range {
+            attributedText.addAttribute(.font, value: UIFont(name: "Gilroy-ExtraBold", size: 28)!, range: range)
+        }
+        welcomeeLabel.attributedText = attributedText
     }
     
     @IBAction func loginButtonAction(_ sender: LoaderButton) {

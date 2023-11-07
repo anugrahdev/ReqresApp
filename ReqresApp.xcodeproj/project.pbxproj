@@ -33,6 +33,7 @@
 		650BDD262AFA3DC900F744DF /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BDD252AFA3DC800F744DF /* HomePresenter.swift */; };
 		650BDD282AFA3DD200F744DF /* HomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BDD272AFA3DD200F744DF /* HomeWireframe.swift */; };
 		650BDD2A2AFA3DDD00F744DF /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BDD292AFA3DDD00F744DF /* HomeContract.swift */; };
+		651EC6A52AFA7C5B00275F78 /* Gilroy-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 651EC6A42AFA7C5B00275F78 /* Gilroy-ExtraBold.ttf */; };
 		652FC0882AF9E17100A94A61 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652FC0862AF9E17100A94A61 /* LoginViewController.swift */; };
 		652FC0892AF9E17100A94A61 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 652FC0872AF9E17100A94A61 /* LoginViewController.xib */; };
 		652FC0CC2AF9ECF100A94A61 /* Gilroy Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 652FC0C52AF9ECF100A94A61 /* Gilroy Light.ttf */; };
@@ -91,6 +92,7 @@
 		650BDD252AFA3DC800F744DF /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		650BDD272AFA3DD200F744DF /* HomeWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireframe.swift; sourceTree = "<group>"; };
 		650BDD292AFA3DDD00F744DF /* HomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContract.swift; sourceTree = "<group>"; };
+		651EC6A42AFA7C5B00275F78 /* Gilroy-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-ExtraBold.ttf"; sourceTree = "<group>"; };
 		652FC0862AF9E17100A94A61 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		652FC0872AF9E17100A94A61 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		652FC0C52AF9ECF100A94A61 /* Gilroy Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy Light.ttf"; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 		652FC0C42AF9ECE600A94A61 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				651EC6A42AFA7C5B00275F78 /* Gilroy-ExtraBold.ttf */,
 				652FC0C82AF9ECF100A94A61 /* Gilroy Bold.ttf */,
 				652FC0C52AF9ECF100A94A61 /* Gilroy Light.ttf */,
 				652FC0CB2AF9ECF100A94A61 /* Gilroy Medium.ttf */,
@@ -399,6 +402,7 @@
 				652FC0892AF9E17100A94A61 /* LoginViewController.xib in Resources */,
 				652FC0D02AF9ECF100A94A61 /* Gilroy Regular.ttf in Resources */,
 				652FC0CE2AF9ECF100A94A61 /* Proxima Nova Bold.otf in Resources */,
+				651EC6A52AFA7C5B00275F78 /* Gilroy-ExtraBold.ttf in Resources */,
 				650BDD242AFA3CAF00F744DF /* HomeViewController.xib in Resources */,
 				65993E812AF9DFA50061D3DF /* Assets.xcassets in Resources */,
 				652FC0D22AF9ECF100A94A61 /* Gilroy Medium.ttf in Resources */,

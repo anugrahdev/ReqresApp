@@ -27,7 +27,7 @@
                 <outlet property="loginButton" destination="XEJ-ff-53l" id="kzu-B7-9WW"/>
                 <outlet property="passwordTextField" destination="PB6-KR-SGV" id="Fiu-Y4-Zgz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
-                <outlet property="welcomeLabel" destination="2G8-T2-eTp" id="Me2-lq-IVO"/>
+                <outlet property="welcomeeLabel" destination="2G8-T2-eTp" id="uXH-s7-SQl"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -36,13 +36,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2G8-T2-eTp">
-                    <rect key="frame" x="20" y="79" width="273" height="28.333333333333329"/>
+                    <rect key="frame" x="20" y="79" width="273.33333333333331" height="28.333333333333329"/>
                     <color key="tintColor" systemColor="labelColor"/>
                     <attributedString key="attributedText">
                         <fragment content="Hai">
                             <attributes>
                                 <color key="NSColor" name="PrimaryTitle"/>
-                                <font key="NSFont" size="28" name="Gilroy-Medium"/>
+                                <font key="NSFont" size="28" name="Gilroy-Light"/>
                             </attributes>
                         </fragment>
                         <fragment content=", Selamat Datang">
